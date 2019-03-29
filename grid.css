@@ -1,0 +1,34 @@
+.row {
+    max-width: 768px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  
+  @media screen and (min-width: 1120px) {
+    .row {
+      max-width: 1200px;
+    }
+  }
+  
+  .row:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  .col-1 {
+    float: left;
+    width: 100%;
+    padding: 0 1.041666666%;
+  }
+  
+  .row--reverse > .col-1 {
+    float: right;
+  }
+  
+  @media screen and (min-width: 1120px) {
+    .col-1 {
+      width: 100%;
+    }
+    
+  }
